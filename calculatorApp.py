@@ -83,6 +83,10 @@ class CalculatorApp:
         self.sqrt = Button(root,  text='√',  fg='black',  bg='#ADD8E6', 
                         command=self.press_sqrt, height=1,  width=8) 
         self.sqrt.grid(row=6,  column=3)
+        
+        self.developer_note = Label(root, text='Developed by Jamandalley', fg="black", bg='#ADD8E6', 
+                                    font=('Garamond', 10), justify='right')
+        self.developer_note.grid(row=7, columnspan=4)
     
     def press(self, num):
         self.expression = self.expression + str(num)
